@@ -7,7 +7,7 @@ function Movies() {
   return <div>
     <h1>Movies Page</h1>
     {movies.map(movie => {
-      return <div key = {movie}>
+      return <div key = {movie.title}>
         <p>Title : {movie.title}</p>
         <p>Time : {movie.time}</p>
         <ul>

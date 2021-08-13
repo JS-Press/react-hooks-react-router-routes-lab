@@ -5,10 +5,10 @@ function Directors() {
   return <div>
     <h1>Directors Page</h1>
     {directors.map(director => {
-      return <div key = {director}>
+      return <div key = {director.name}>
         <p>{director.name}</p>
         <ul>
-          {director.movies.map(movie => <li >{movie}</li>)}
+          {director.movies.map(movie => <li key={movie} >{movie}</li>)}
         </ul>
       </div>
     })}
